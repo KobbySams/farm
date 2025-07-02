@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Farms - Your Local Produce Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Fresh Farms</h1>
+            </div>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#advertise">Advertise</a></li>
+                <li id="signup-link"><a href="#" id="signup-btn">Sign Up</a></li>
+                <li id="login-link"><a href="#" id="login-btn">Login</a></li>
+                <li id="user-welcome" style="display: none; color: #C8E6C9; font-weight: bold;"></li>
+                <li id="logout-link" style="display: none;"><a href="#" id="logout-btn">Logout</a></li>
+                <li id="cart-icon-container">
+                    <a href="#" id="cart-btn">🛒<span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to Fresh Farms</h2>
+            <p>Discover the best local, farm-fresh products right from the source.</p>
+        </section>
+
+        <section id="products" class="product-gallery">
+            <h2>Featured Products</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Example Product Card -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?q=80&w=400&auto=format&fit=crop" alt="Organic Apples">
+                    <h3>Organic Apples</h3>
+                    <p class="price">$2.99 / lb</p>
+                    <p class="description">Crisp, sweet, and juicy apples, grown without pesticides.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587486913049-52fc0891eda3?q=80&w=400&auto=format&fit=crop" alt="Fresh Eggs">
+                    <h3>Fresh Eggs</h3>
+                    <p class="price">$4.50 / dozen</p>
+                    <p class="description">Farm-fresh eggs from free-range chickens.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1534620808146-d33874f61014?q=80&w=400&auto=format&fit=crop" alt="Artisan Bread">
+                    <h3>Artisan Bread</h3>
+                    <p class="price">$5.00 / loaf</p>
+                    <p class="description">Handmade sourdough bread, baked fresh daily.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?q=80&w=400&auto=format&fit=crop" alt="Fresh Tomatoes">
+                    <h3>Fresh Ghanaian Tomatoes</h3>
+                    <p class="price">GH₵10.00 / bowl</p>
+                    <p class="description">Juicy, ripe tomatoes, perfect for stews and salads.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1590868309235-ea34bed7bd7f?q=80&w=400&auto=format&fit=crop" alt="Sweet Carrots">
+                    <h3>Sweet Carrots</h3>
+                    <p class="price">GH₵8.00 / bunch</p>
+                    <p class="description">Crunchy and sweet carrots, rich in vitamins.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?q=80&w=400&auto=format&fit=crop" alt="Juicy Watermelon">
+                    <h3>Juicy Watermelon</h3>
+                    <p class="price">GH₵25.00 / each</p>
+                    <p class="description">Sweet and refreshing watermelon, straight from the farm.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1557242668-71a253335194?q=80&w=400&auto=format&fit=crop" alt="Cocoa Pods">
+                    <h3>Raw Cocoa Pods</h3>
+                    <p class="price">GH₵15.00 / pod</p>
+                    <p class="description">The source of the world's finest chocolate, from the heart of Ghana.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1598030304223-c749e54446df?q=80&w=400&auto=format&fit=crop" alt="Sugarcane">
+                    <h3>Fresh Sugarcane</h3>
+                    <p class="price">GH₵5.00 / stalk</p>
+                    <p class="description">Natural, sweet sugarcane for a healthy treat.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1543631483-693994870494?q=80&w=400&auto=format&fit=crop" alt="Puna Yams">
+                    <h3>Puna Yams</h3>
+                    <p class="price">GH₵20.00 / tuber</p>
+                    <p class="description">Versatile and delicious yams, a staple in Ghanaian cuisine.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1620706857373-21f346b36746?q=80&w=400&auto=format&fit=crop" alt="Fresh Cassava">
+                    <h3>Fresh Cassava</h3>
+                    <p class="price">GH₵12.00 / tuber</p>
+                    <p class="description">Ideal for making fufu, gari, and other local dishes.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1603652632999-c831461b3a8a?q=80&w=400&auto=format&fit=crop" alt="Ripe Plantain">
+                    <h3>Ripe Plantain</h3>
+                    <p class="price">GH₵15.00 / bunch</p>
+                    <p class="description">Sweet plantains, perfect for frying, grilling, or boiling.</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="advertise" class="advertise-form">
+            <h2>Advertise Your Product</h2>
+            <p>Join our community of local farmers and producers. Fill out the form below to feature your product on our site.</p>
+            <form id="product-form">
+                <div class="form-group">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" name="product-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Price (e.g., $3.99 / lb)</label>
+                    <input type="text" id="product-price" name="product-price" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Description</label>
+                    <textarea id="product-description" name="product-description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">Product Image</label>
+                    <input type="file" id="product-image" name="product-image" accept="image/*" required>
+                </div>
+                <button type="submit">Add My Product</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="about">
+        <p>&copy; 2024 Fresh Farms. All rights reserved.</p>
+    </footer>
+
+    <!-- Authentication Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <!-- Login Form -->
+            <div id="login-form-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                </form>
+            </div>
+            <!-- Signup Form -->
+            <div id="signup-form-container" style="display:none;">
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                    <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-cart-btn">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items-container">
+                <!-- Cart items will be injected here by JavaScript -->
+                <p>Your cart is empty.</p>
+            </div>
+            <div id="cart-summary">
+                <p>Total: <span id="cart-total">GH₵0.00</span></p>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
